@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        ul {
+            list-style-type: none;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+        .side-bar img {
+            width: 10%;
+        }
+        .side-bar img , .side-bar p {
+            vertical-align: middle;
+            display: inline-block;
+            filter: invert(1);
+        }
+        .side-bar p {
+            font-size: 25px;
+        }
+        .side-bar {
+            background-color: #38bdf8;
+        }
+        ul {
+            padding-top: 30px;
+            padding-left: 12px;
+        }
+        .side-bar div {
+            padding-top: 10px;
+            padding-left: 10px;
+        }
+        .side-bar img {
+            padding-right: 10px;
+        }
+        .side-bar li {
+            padding-top: 30px;
+        }
+        #top-img {
+            width: 15%;
+        }
+        #top-p {
+            font-size: 30px;
+        }
+        .inline-b {
+            display: inline-block;
+        }
+        .width-15 {
+            width: 15px;
+        }
+        .width-25 {
+            width: 25px;
+            margin-right: 10px;
+        }
+        .width-30 {
+            width: 30px;
+            margin: 0px 10px;
+        }
+        .vertical-a {
+            vertical-align: middle;
+        }
+        .top-h {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            margin-bottom: 25px;
+        }
+        .header {
+            padding: 15px 30px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .bottom-h {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            align-items: end;
+        }
+        .flex {
+            display: flex;
+        }
+        input {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            box-sizing: border-box;
+            margin-right: 100px;
+            background-color: #e9e8e8;
+        }
+        .bottom-h img {
+            width: 50px;
+        }
+        button {
+            background-color: #38bdf8;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 25px;
+            cursor: pointer;
+            margin-right: 5px;
+            margin-top: 1px;
+        }
+        .content {
+            background-color: #e9e8e8;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+        }
+        .left-side div, .right-bar div {
+            background-color: white;
+        }
+        .left-side {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 15px;
+        }
+        .left-side-div {
+            height: 200px;
+            border-radius: 8px;
+            border-left: 10px solid orange;
+            padding: 30px 20px;
+            display: grid;
+        }
+        .margin-15 {
+            margin: 15px;
+        }
+        .right-top {
+            display: grid;
+            gap: 20px;
+            padding: 30px;
+            border-radius: 8px;
+        }
+        .right-bottom {
+            display: grid;
+            gap: 20px;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        hr {
+            width: 100%;
+            height: 1px;
+            border: none;
+            background-color: #ccc;
+        }
+        .right-img {
+            place-self: end;
+        }
+        .right-img img {
+            width: 30px;
+            margin: 5px;
+        }
+        .left-side-div p:nth-child(even),.right-top p:nth-child(even),.right-bottom p:nth-child(even) {
+            color: #858585;
+        }
+        .right-bottom img {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="side-bar">
+            <div><img id="top-img" src="view-dashboard.svg"><p id="top-p">Dashboard</p></div>
+            <ul>
+                <li><img src="home.svg"><p>Home</p></li>
+                <li><img src="card-account-details-outline.svg"><p>Profile</p></li>
+                <li><img src="message-reply.svg"><p>Messages</p></li>
+                <li><img src="clock-time-three.svg"><p>History</p></li>
+                <li><img src="file-multiple.svg"><p>Tasks</p></li>
+                <li><img src="account-group.svg"><p>Coummunities</p></li>
+            </ul>
+            <ul>
+                <li><img src="cog.svg"><p>Settings</p></li>
+                <li><img src="help-box.svg"><p>Support</p></li>
+                <li><img src="shield-check.svg"><p>Privacy</p></li>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="header">
+                <div class="top-h">
+                    <div class="flex">
+                    <img class="width-25 vertical-a" src="magnify.svg">
+                    <input class="vertical-a" type="search" name="search">
+                </div>
+                <div>
+                    <img class="width-15 vertical-a" src="bell-ring-outline.svg">
+                    <img class="width-30 vertical-a" src="gene-structure-svgrepo-com.svg">
+                    <p class="inline-b vertical-a">Morgan Oakley</p>
+                </div>
+                </div>
+                <div class="bottom-h">
+                    <div>
+                    <img class="vertical-a" src="gene-structure-svgrepo-com.svg">
+                    <div class="inline-b vertical-a">
+                    <p>Hi there,</p>
+                    <p>Morgan Oakley (@morgan)</p>
+                </div>
+                </div>
+                <div>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="project">
+                    <p class="margin-15">Your Projects</p>
+                    <div class="left-side">
+                    <div class="left-side-div"><div><p>Super Cool Project</p>
+                    <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+                    <div class="right-img">
+                    <img src="star-plus-outline.svg"><img src="eye-plus-outline.svg"><img src="source-fork.svg">
+                </div>
+                </div>
+                <div class="left-side-div"><div><p>Super Cool Project</p>
+                    <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+                    <div class="right-img">
+                    <img src="star-plus-outline.svg"><img src="eye-plus-outline.svg"><img src="source-fork.svg">
+                </div>
+                </div>
+                <div class="left-side-div"><div><p>Super Cool Project</p>
+                    <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+                    <div class="right-img">
+                    <img src="star-plus-outline.svg"><img src="eye-plus-outline.svg"><img src="source-fork.svg">
+                </div>
+                </div>
+                <div class="left-side-div"><div><p>Super Cool Project</p>
+                    <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+                    <div class="right-img">
+                    <img src="star-plus-outline.svg"><img src="eye-plus-outline.svg"><img src="source-fork.svg">
+                </div>
+                </div>
+                <div class="left-side-div"><div><p>Super Cool Project</p>
+                    <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+                    <div class="right-img">
+                    <img src="star-plus-outline.svg"><img src="eye-plus-outline.svg"><img src="source-fork.svg">
+                </div>
+                </div>
+                <div class="left-side-div"><div><p>Super Cool Project</p>
+                    <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                </div>
+                    <div class="right-img">
+                    <img src="star-plus-outline.svg"><img src="eye-plus-outline.svg"><img src="source-fork.svg">
+                </div>
+                </div>
+                </div>
+                </div>
+                <div class="right-bar">
+                    <p class="margin-15">Announcements</p>
+                    <div class="right-top margin-15">
+                        <div>
+                        <p>Super Cool Project</p>
+                        <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Super Cool Project</p>
+                        <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    </div>
+                    <hr>
+                    <div>
+                        <p>Super Cool Project</p>
+                        <p>sed tempus ut lacus ut scelerisque. suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                    </div>
+                    </div>
+                    <p class="margin-15">Trending</p>
+                    <div class="right-bottom margin-15">
+                        <div>
+                            <img class="vertical-a" src="genetic-algorithm-svgrepo-com.svg">
+                            <div class="inline-b vertical-a">
+                            <p>@tegan</p>
+                            <p>World Peace Builder</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img class="vertical-a" src="gene-structure-svgrepo-com.svg">
+                            <div class="inline-b vertical-a">
+                            <p>@morgan</p>
+                            <p>Super Cool Project</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img class="vertical-a" src="genetic-data-svgrepo-com.svg">
+                            <div class="inline-b vertical-a">
+                            <p>@kendall</p>
+                            <p>Life Changing App</p>
+                        </div>
+                        </div>
+                        <div>
+                            <img class="vertical-a" src="genetic-research-svgrepo-com.svg">
+                            <div class="inline-b vertical-a">
+                            <p>@alex</p>
+                            <p>No Traffic Maker</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
